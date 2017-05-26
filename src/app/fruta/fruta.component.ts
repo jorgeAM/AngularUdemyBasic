@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './fruta.component.html'
 })
 export class FrutaComponent {
-  nombre_componente = 'Componente de fruta'
-  listado_frutas = 'Naranja, Manzana, Pera y Sandia'	
+  nombre_componente:string = 'Componente de fruta'
+  listado_frutas:string = 'Naranja, Manzana, Pera y Sandia'
+  trabajos:Array<any> = ['Informatico', 'Diseñador', 24]
 }

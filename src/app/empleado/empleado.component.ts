@@ -29,7 +29,7 @@ export class EmpleadoComponent {
   }
   //metodo ejecutado despues de constructor
   ngOnInit(){
-  	console.log(this.emp);
+  	//console.log(this.emp);
   }
 
   cambiarExterno(valor){

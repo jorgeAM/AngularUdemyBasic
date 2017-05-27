@@ -11,7 +11,7 @@ export class FrutaComponent {
 
   //constructor
   constructor(){
-  	console.log(this.trabajos)
+  	//console.log(this.trabajos)
   	//this.holaMundo()
   }
 

@@ -5,3 +5,8 @@
 .borderVerde{
 	border: 5px solid green !important;	
 }
+
+.activado{
+	font-weight: bold;
+	background: yellow;
+}

@@ -1,6 +1,6 @@
 <h3 style="color: blue;">{{titulo}}</h3>
 
-<strong>El mejor empleado</strong>
+<strong>El mejor empleado con ngIf y envento click</strong>
 
 <div *ngIf="trabajador_externo == false">
 	<button (click)="cambiarExterno(true)">
@@ -20,8 +20,8 @@
 	</button>	
 </div>
 
-<br>
-<h4>Array Trabajadores</h4>
+<hr>
+<h3>Array Trabajadores con ngFor</h3>
 <ul>
 	<li *ngFor="let empleado of trabajadores"> 
 	Empleado
@@ -32,4 +32,31 @@
 			<li>{{empleado.contratado ? 'Contratado': 'No esta en la empresa'}}</li>
 		</ul>
 	</li>
+</ul>
+
+<hr>
+<h3>Color con ngSwitch</h3>
+<ul [ngSwitch]="color">
+
+	<li *ngSwitchCase="'red'" [ngStyle]="{
+		'background':color,
+		'color': 'white',
+		'padding': '20px'
+	}">Es de color Rojo</li>
+	<li *ngSwitchCase="'green'" [ngStyle]="{
+		'background':color,
+		'color': 'white',
+		'padding': '20px'
+	}">Es de color Verde</li>
+	<li *ngSwitchCase="'blue'" [ngStyle]="{
+		'background':color,
+		'color': 'white',
+		'padding': '20px'
+	}">Es de color Azul</li>
+	<li *ngSwitchCase="'black'" [ngStyle]="{
+		'background':color,
+		'color': 'white',
+		'padding': '20px'
+	}">Es de color Negro</li>
+	
 </ul>

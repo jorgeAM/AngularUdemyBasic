@@ -10,9 +10,11 @@ export class EmpleadoComponent {
   titulo:string = 'Informatico'
   //creaos objeto
   emp:Empleado
+  trabajador_externo:boolean
 
   constructor(){
     this.emp = new Empleado('Jorge Alfaro', 24, 'informatico', true);
+    this.trabajador_externo = false
   }
   //metodo ejecutado despues de constructor
   ngOnInit(){

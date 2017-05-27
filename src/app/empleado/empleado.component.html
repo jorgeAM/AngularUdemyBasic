@@ -1,9 +1,11 @@
 <h3 style="color: blue;">{{titulo}}</h3>
 
 <strong>El mejor empleado</strong>
-<ul>
+
+<ul *ngIf="trabajador_externo == false">
 	<li>{{emp.nombre}}</li>
 	<li>{{emp.edad}}</li>
 	<li>{{emp.cargo}}</li>
 	<li>{{emp.contratado ? 'Contratado': 'No esta en la empresa'}}</li>
+
 </ul>

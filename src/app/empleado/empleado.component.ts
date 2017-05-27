@@ -20,4 +20,9 @@ export class EmpleadoComponent {
   ngOnInit(){
   	console.log(this.emp);
   }
+
+  cambiarExterno(valor){
+    this.trabajador_externo = valor
+  }
+
 }

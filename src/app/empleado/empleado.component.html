@@ -2,10 +2,20 @@
 
 <strong>El mejor empleado</strong>
 
-<ul *ngIf="trabajador_externo == false">
-	<li>{{emp.nombre}}</li>
-	<li>{{emp.edad}}</li>
-	<li>{{emp.cargo}}</li>
-	<li>{{emp.contratado ? 'Contratado': 'No esta en la empresa'}}</li>
-
-</ul>
+<div *ngIf="trabajador_externo == false">
+	<button (click)="cambiarExterno(true)">
+		Ocultar
+	</button>
+	<ul>
+		<li>{{emp.nombre}}</li>
+		<li>{{emp.edad}}</li>
+		<li>{{emp.cargo}}</li>
+		<li>{{emp.contratado ? 'Contratado': 'No esta en la empresa'}}</li>
+	</ul>
+</div>
+<br>
+<div *ngIf="trabajador_externo == true">
+	<button (click)="cambiarExterno(false)">
+	Mostrar
+	</button>	
+</div>

@@ -19,3 +19,17 @@
 	Mostrar
 	</button>	
 </div>
+
+<br>
+<h4>Array Trabajadores</h4>
+<ul>
+	<li *ngFor="let empleado of trabajadores"> 
+	Empleado
+		<ul>
+			<li>{{empleado.nombre}}</li>
+			<li>{{empleado.edad}}</li>
+			<li>{{empleado.cargo}}</li>
+			<li>{{empleado.contratado ? 'Contratado': 'No esta en la empresa'}}</li>
+		</ul>
+	</li>
+</ul>

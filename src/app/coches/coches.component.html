@@ -13,8 +13,12 @@
   [(ngModel)]="coche.color" name="color">
   <br>
   <input type="submit" value="Guardar">
-
-  {{coche.nombre}}
-  {{coche.caballaje}}
-  {{coche.color}}
 </form>
+
+
+
+<ul>
+	<li *ngFor="let coche of coches">
+		{{coche.nombre}} - {{coche.caballaje}} - {{coche.color}}
+	</li>
+</ul>

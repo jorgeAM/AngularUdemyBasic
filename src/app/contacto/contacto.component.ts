@@ -18,7 +18,6 @@ export class ContactoComponent {
   ngOnInit(){
   	this._route.params.forEach((params:Params)=>{
   		this.parametro = params['page']
-  		console.log(this.parametro)
   	})
   }
 }

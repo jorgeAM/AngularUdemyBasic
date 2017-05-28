@@ -11,8 +11,11 @@ export class HomeComponent {
   titulo = 'Pagina Principal';
   listado_ropa:Array<string>
   prenda_a_guardar:string 
+  fecha
   //esto para no usar new -> NO ES RECOMENDABLE
-  constructor(private ropaService: RopaService) { }
+  constructor(private ropaService: RopaService){
+  	this.fecha = new Date(2017, 4, 28)
+  }
 
   ngOnInit(){
   	this.listado_ropa = this.ropaService.getRopa()

@@ -1,6 +1,9 @@
 <h1>{{titulo}}</h1>
 <br>
-
+{{fecha | date:'dd/MM/yyyy'}}
+<br>
+{{fecha | date:'fullDate'| uppercase}}
+<br>
 <input type="text" [(ngModel)]="prenda_a_guardar"/>
 
 <button (click)="guardarPrenda()">

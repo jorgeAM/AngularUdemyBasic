@@ -5,24 +5,22 @@ import { Component } from '@angular/core';
   templateUrl: './fruta.component.html'
 })
 export class FrutaComponent {
-  nombre_componente:string = 'Componente de fruta'
-  listado_frutas:string = 'Naranja, Manzana, Pera y Sandia'
-  trabajos:Array<any> = ['Informatico', 'Diseñador', 24]
+  titulo:string
+  administrador:boolean
 
-  //constructor
   constructor(){
-  	//console.log(this.trabajos)
-  	//this.holaMundo()
+    this.titulo = "Ejemplo Template"
+    this.administrador = true
   }
 
-  //llamar metodos sin tener que declararlos en constructor
-  ngOnInit(){
-  	//this.holaMundo()
+  cambio(){
+    if (this.administrador) {
+      this.administrador=false
+      console.log(this.administrador)
+    }
+    else {
+      this.administrador=true
+      console.log(this.administrador)
+    }
   }
-
-  //metodo
-  holaMundo(){
-  	alert('Hola Mundo')
-  }
-
 }

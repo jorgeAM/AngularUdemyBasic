@@ -1,2 +1,10 @@
-<h2>{{nombre_componente}}</h2>
-<p>{{listado_frutas}}</p>
+<h1>{{titulo}}</h1>
+
+<button (click)="cambio()">Cambio</button>
+<br>
+<div *ngIf="administrador; else noAdmin ">
+	<strong>ERES ADMIN</strong>	
+</div>
+<ng-template #noAdmin>
+	<strong>NO ERES ADMIN</strong>	
+</ng-template>

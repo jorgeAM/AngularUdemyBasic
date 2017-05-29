@@ -2,9 +2,13 @@
 
 <button (click)="cambio()">Cambio</button>
 <br>
-<div *ngIf="administrador; else noAdmin ">
-	<strong>ERES ADMIN</strong>	
+<div *ngIf="administrador then admin else noAdmin ">
 </div>
+
+<ng-template #admin>
+	<strong>ERES ADMIN</strong>	
+</ng-template>
+
 <ng-template #noAdmin>
 	<strong>NO ERES ADMIN</strong>	
 </ng-template>

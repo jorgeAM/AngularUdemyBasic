@@ -16,11 +16,9 @@ export class FrutaComponent {
   cambio(){
     if (this.administrador) {
       this.administrador=false
-      console.log(this.administrador)
     }
     else {
       this.administrador=true
-      console.log(this.administrador)
     }
   }
 }
